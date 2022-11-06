@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
+console.log("marketing");
 
 const mount = (el) => {
   ReactDOM.render(<App />, el);
