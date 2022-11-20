@@ -9,7 +9,7 @@ import Progress from "./components/Progress";
 
 const MarketingLazy = lazy(() => import("./components/MarketingApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
-const DashboardLazy = Lazy(() => import("./components/DashboardApp"));
+const DashboardLazy = lazy(() => import("./components/DashboardApp"));
 
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
