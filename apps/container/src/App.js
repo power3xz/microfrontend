@@ -9,6 +9,7 @@ import Progress from "./components/Progress";
 
 const MarketingLazy = lazy(() => import("./components/MarketingApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
+const DashboardLazy = Lazy(() => import("./components/DashboardApp"));
 
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -24,6 +25,9 @@ export default () => {
             <Switch>
               <Route path="/auth">
                 <AuthLazy onSignIn={() => setIsSignedIn(true)} />
+              </Route>
+              <Route path="/dashboard">
+                <DashboardLazy />
               </Route>
               <Route path="/" component={MarketingLazy} />
             </Switch>
