@@ -1,0 +1,23 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd apps/container; npm run start\" \"cd apps/auth; npm run start\" \"cd apps/dashboard; npm run start\" \"cd apps/marketing; npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/power3xz/microfrontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/power3xz/microfrontend/issues"
+  },
+  "homepage": "https://github.com/power3xz/microfrontend#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
