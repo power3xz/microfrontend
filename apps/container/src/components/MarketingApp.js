@@ -8,7 +8,10 @@ export default () => {
   useEffect(() => {
     mount(ref.current, {
       onNavigate: ({ pathname: nextPathName }) => {
-        history.push(nextPathName);
+        const { pathname } = history.location;
+        if (pathname !== nextPathName) {
+          history.push(nextPathName);
+        }
       },
     });
   }, []);
