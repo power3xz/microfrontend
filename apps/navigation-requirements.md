@@ -27,3 +27,9 @@
 ### Building a routing library can be hard - we don't want to author a new one!
 
 ### Some amount of custom coding is OK
+
+# Inflexible Requirements #5
+
+## We need navigation features for sub-apps in both hosted mode and in isolation
+
+### Developing for each environment should be easy - a developer should immediately be able to see what path the are visiting
