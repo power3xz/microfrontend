@@ -16,6 +16,7 @@ export default () => {
     });
 
     history.listen(onParentNavigate);
+    onParentNavigate(history.location);
   }, []);
 
   return <div ref={ref} />;
