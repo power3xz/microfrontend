@@ -33,3 +33,11 @@
 ## We need navigation features for sub-apps in both hosted mode and in isolation
 
 ### Developing for each environment should be easy - a developer should immediately be able to see what path the are visiting
+
+# Inflexible Requirements #6
+
+## If different apps need to communicate information about routing, it should be done is as generic a fashion as possible
+
+### Each app might be using a complete different navigation framework
+
+### We might swap out or upgrade navigation libraries all the time - should't require a rewrite of the rest of app
