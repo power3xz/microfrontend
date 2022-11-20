@@ -19,8 +19,6 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
-        env:
-          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
 
       # 빌드 결과물(dist) s3 동기화
       - uses: shinyinc/action-aws-cli@v1.2
